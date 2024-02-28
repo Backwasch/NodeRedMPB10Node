@@ -1,0 +1,17 @@
+{
+  "name": "IOLinkMaster-MPB10",
+  "description": "(Unoffical) Node for the MPB10 Sensor made by SICK",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Test"
+  ],
+  "author": "Birkan Baran",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "iolink-SICK-MPB10": "SICK-MPB10.js"
+    }
+  }
+}

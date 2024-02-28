@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('iolink-SICK-MPB10',
+    {
+        category: 'IOLinkMaster',
+        color: '#b27fb2',
+        defaults:
+        {
+            name: {value:"SICK-MPB10"},
+            ip: {value:"127.0.0.1", required:true},
+            port: {value: 0, require:true},
+            refreshrate: {value: 1}
+        },
+        inputs:0,
+        outputs:1,
+        icon: "sense.png",
+        label: function()
+        {
+            return this.name||"SICK-MPB10";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="iolink-SICK-MPB10">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-ip"><i class="icon-tag"></i> IOLink Master IP</label>
+        <input type="text" id="node-input-ip" placeholder="127.0.0.1">
+    </div>
+    <div class="form-row">
+        <label for="node-input-port"><i class="icon-tag"></i> IOLink Port</label>
+        <input type="number" id="node-input-port" placeholder="IOLink Port Number">
+    </div>
+    <div class="form-row">
+        <label for="node-input-refreshrate"><i class="icon-tag"></i> Refresh Rate (Seconds)</label>
+        <input type="number" id="node-input-refreshrate" placeholder="seconds" value="1">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="iolink-SICK-MPB10">
+    <p>SICK-MPB10 Temperature Sensor. Outputs a constant stream from the output of the selected SICK-MPB10 Sensor.</p>
+</script>

@@ -45,7 +45,7 @@ module.exports = function (RED) {
                         var newJson = JSON.parse(data);
 
                         let now = new Date();
-                        let formattedDate = `${padWithZero(now.getDate())}-${padWithZero(now.getMonth() + 1)}-${now.getFullYear()}`;
+                        let formattedDate = `${now.getFullYear()}-${padWithZero(now.getMonth() + 1)}-${padWithZero(now.getDate())}`;
                         let formattedTime = `${padWithZero(now.getHours())}:${padWithZero(now.getMinutes())}:${padWithZero(now.getSeconds())}.${now.getMilliseconds()}`;
 
                         let msg = {};

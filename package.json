@@ -1,6 +1,6 @@
 {
   "name": "iolinkmaster-mpb10",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "(Unoffical) Node for the MPB10 Sensor made by SICK",
   "scripts": {
     "test": "test"
